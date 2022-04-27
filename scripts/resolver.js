@@ -6,7 +6,6 @@ let textoDesencriptado = "";
 let letras = [];
 let contador = 0;
 let salida = document.querySelector("#outputTexto");
-let salida1 = document.querySelector("#area");
 
 
 // Función para encriptar los textos.
@@ -83,7 +82,7 @@ function botonDesencriptar(){
 }
 
 function botonCopiar(){
-    navigator.clipboard.writeText(salida1.value);
+    navigator.clipboard.writeText(salida.textContent);
 }
 
 
