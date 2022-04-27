@@ -6,6 +6,7 @@ let textoDesencriptado = "";
 let letras = [];
 let contador = 0;
 let salida = document.querySelector("#outputTexto");
+let salida1 = document.querySelector("#area");
 
 
 // Función para encriptar los textos.
@@ -48,7 +49,11 @@ function botonEncriptar(){
     contador = 0;
     textoEncriptado = letras.join("");
 
-    salida.replaceChildren(textoEncriptado)
+
+
+    salida.replaceChildren(textoEncriptado);
+
+    salida1.replaceChildren(textoEncriptado);
 
 
 
@@ -72,12 +77,13 @@ function botonDesencriptar(){
     let textoDesencriptado = textoDesencriptado5.replaceAll("ufat", "u");
 
     
-    salida.replaceChildren(textoDesencriptado)
+    salida.replaceChildren(textoDesencriptado);
+    salida1.replaceChildren(textoDesencriptado);
     
 }
 
 function botonCopiar(){
-    navigator.clipboard.writeText(salida.value);
+    navigator.clipboard.writeText(salida1.value);
 }
 
 
@@ -88,3 +94,4 @@ document.getElementById("encriptar").onclick = botonEncriptar;
 document.getElementById("desencriptar").onclick = botonDesencriptar;
 
 document.getElementById("copiar").onclick = botonCopiar;
+
