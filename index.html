@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-  <!-- 
-Hola! Mi nombre es Emanuel Manrique, aka Lu-Deng. Espero mi proyecto sea de tu agrado. 
-
-
-Anotación final: Este proyecto fue realizado desde 0 para la beca en ONE. Aparte de lo aprendido busqué documentación sobre clean
+  <!-- Anotación final: Este proyecto fue realizado desde 0 para la beca en ONE. Aparte de lo aprendido busqué documentación sobre clean
 code, intentando optimizar lo máximo su funcionamiento y lectura para otros coders.
 
 Anotación 1: En un principio la página no iba a ser responsive, pero al ir documentandome me pareció un desperdicio dejarla
@@ -13,12 +9,13 @@ solo disponible para desktop
 
 Annotation 2 (English): This page was only made in Spanish, all vars and fuctions are in Spanish. 
 
+
 Gracias por la oportunidad.-->
 
   <!-- Todo consejo para mejorar la codificación de la página será bien recibido -->
 
-    <head>
-    <title>Encriptador de texto</title>
+  <head>
+    <title>Encriptador de textos</title>
     <meta charset="UTF-8" />
 
 <!-- Aquí se encuentran todas las configuraciones básicas para el funcionamiento de la página -->
@@ -64,7 +61,7 @@ de GitHub-->
                 <div class="gn-scroller">
                   <ul class="gn-menu">
                     <li>
-                      <a href="https://github.com/Lu-deng/Encriptador-de-Texto-ORACLE" class="gn-icon gn-icon-download">Ver repositorio</a>
+                      <a href="https://github.com/Lu-deng" class="gn-icon gn-icon-download">Ver repositorio</a>
                     </li>
                     <li><a href="https://github.com/Lu-deng" class="gn-icon gn-icon-cog">Portafolio</a></li>
                     <li><a href="https://www.instagram.com/manriqueemaa" class="gn-icon gn-icon-help">Contacto</a></li>
@@ -107,32 +104,37 @@ de GitHub-->
             id="inputTexto"
           ></textarea>
           <div id="botones">
-            <button id="encriptar" class="btn btn-primary">Encriptar</button>
-            <button id="desencriptar" class="btn btn-primary">
+            <button id="encriptar">Encriptar</button>
+            <button id="desencriptar">
               Desencriptar
             </button>
           </div>
         </div>
-        <div class="mismaLinea" id="outputDiseño">
-          <textarea
-            type="textarea"
-            readonly
-            id="outputTexto"
-            placeholder="Todavía no encontramos nada para encriptar."
-          ></textarea>
-          <div><button id="copiar" class="btn btn-primary">Copiar</button></div>
+        
+        <div class="diseñoCaja">
+        <div class="mismaLinea" id="outputTexto">
+          <img src="sources/sentado.png" id="imagen">
+          <p class="textos"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg> Todavía no hemos encontrado ningún texto</p>
+          <p class="textos"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg> Escribe en el cuadro de tu izquierda y clickea en los botones de abajo</p>
+        </div>
+        <button id="copiar">Copiar</button>
         </div>
       </section>
+
+  <!-- El siguiente textarea facilita el funcionamiento del botón de copiado -->
+      <textarea id="area"></textarea>
+    
     </main>
 
     <!-- En esta parte se encuentra todo lo referido al footer -->
 
     <footer class="footer">
-      <section class="footer" id="seccion">
-        <p id="textoFinal">
-          <img src="sources/oracle-logo.png" id="imagen1" />
-          <img src="sources/alura.png" id="imagen2" /> Página hecha por E. M.
-        </p>
+      <section>
+       <img src="sources/footer.png" id="imagenFooter">
       </section>
     </footer>
   </body>
