@@ -9,3 +9,7 @@ v1.1.0-Beta:
 - Versión por defecto para Oracle
 - Responsive design 
 - Sólo disponible en Español
+
+v1.2.0-Beta:
+- Solucionados los problemas con los botones en los distintos dispositivos
+- Mejora de interfaz 
