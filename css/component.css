@@ -25,7 +25,7 @@
 .gn-menu-main ul {
   margin: 0;
   padding: 0;
-  background: #1d252f;
+  background: #134582;
   color: white;
   list-style: none;
   text-transform: none;
@@ -299,19 +299,19 @@ input.gn-search:focus {
   width: 30px;
   height: 3px;
   background: none;
-  box-shadow: 0 3px white, 0 -6px #1d252f, 0 -9px white, 0 -12px #1d252f;
+  box-shadow: 0 3px white, 0 -6px #134582, 0 -9px white, 0 -12px #134582;
   content: "";
 }
 
 .no-touch .gn-icon-menu:hover::before,
 .no-touch .gn-icon-menu.gn-selected:hover::before {
   background: white;
-  box-shadow: 0 3px #5f6f81, 0 -6px white, 0 -9px #5f6f81, 0 -12px white;
+  box-shadow: 0 3px #5f6f81, 0 -6px white, 0 -9px #134582, 0 -12px white;
 }
 
 .gn-icon-menu.gn-selected::before {
   background: #1d252f;
-  box-shadow: 0 3px white, 0 -6px #1d252f, 0 -9px white, 0 -12px #1d252f;
+  box-shadow: 0 3px white, 0 -6px #134582, 0 -9px white, 0 -12px #134582;
 }
 
 /* styles for opening menu */
